@@ -39,6 +39,6 @@ public class Circle implements Shape
 	public String toString() 
 	{
 		// to be implemented by student
-		return "Radius: " + radius + "Circumference: " + this.calculatePerimeter() + "Area: " + this.calculateArea();
+		return "Circle- \n" + "   Radius: " + radius + "   Area: " + this.calculateArea() + "   Circumference: " + this.calculatePerimeter();
 	}
 }

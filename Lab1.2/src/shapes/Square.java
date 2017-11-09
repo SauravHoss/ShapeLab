@@ -15,11 +15,25 @@ public class Square extends Rectangle {
 		return(Math.pow(side, 2));
 	}
 
+	public double calculateArea() 
+	{
+		// To be written by student
+		return (Math.pow(side, 2));
+	}
+
+
+	public double calculatePerimeter() 
+	{
+		// To be written by student
+		return (side * 4);
+	}
 	
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		// To be written by student
-		return "Side Length: " + side;
+		return  "Square- \n" + "   Side Length: " + side + "   Area: " + calculateArea() + "   Perimeter: " + calculatePerimeter();
 	}
+
 
 }
