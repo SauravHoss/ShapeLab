@@ -20,7 +20,7 @@ public class ShapeUtilities
 		Random rand = new Random();
 		int x = rand.nextInt(3);
 
-		switch (x) 
+		switch (x)
 		{
 		case 0:
 			return new Circle(rand.nextInt(100));
