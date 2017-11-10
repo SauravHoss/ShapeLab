@@ -18,7 +18,6 @@ public class Triangle implements Shape
 		this.side3 = side3;
 	}
 
-
 	public double calculateArea() 
 	{
 		// To be written by student
@@ -34,13 +33,11 @@ public class Triangle implements Shape
 		return done;
 	}
 
-
 	public double calculatePerimeter() 
 	{
 		// To be written by student
 		return (side1 + side2 + side3);
 	}
-
 
 	public String toString() 
 	{

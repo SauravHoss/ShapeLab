@@ -1,8 +1,8 @@
 package shapes;
 
-public class Square extends Rectangle {
-
-	int side;
+public class Square extends Rectangle 
+{
+	private int side;
 
 	public Square(int side) 
 	{
@@ -21,7 +21,6 @@ public class Square extends Rectangle {
 		return (Math.pow(side, 2));
 	}
 
-
 	public double calculatePerimeter() 
 	{
 		// To be written by student
@@ -34,6 +33,5 @@ public class Square extends Rectangle {
 		// To be written by student
 		return  "Square- \n" + "   Side Length: " + side + "   Area: " + calculateArea() + "   Perimeter: " + calculatePerimeter();
 	}
-
 
 }

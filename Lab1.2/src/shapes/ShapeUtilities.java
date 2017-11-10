@@ -2,23 +2,21 @@ package shapes;
 
 import java.util.Random;
 
-/**
+/*
  * @author Mr Levin Created 10/16/2017 Lab 2.1 shapes
- *
  */
 
 public class ShapeUtilities 
 {
-
-	/**
+	/*
 	 * Creates a random shape from the choices.
-	 * 
 	 * @return Shape Student Work: Update with your own shape.
 	 */
+	
 	public static Shape randomShape() 
-	{
+	{	
 		Random rand = new Random();
-		int x = rand.nextInt(4);
+		int x = rand.nextInt(5);
 
 		switch (x)
 		{
@@ -30,44 +28,48 @@ public class ShapeUtilities
 			return new Square(rand.nextInt(50));
 		case 3:
 			return new Triangle(rand.nextInt(10), rand.nextInt(10), rand.nextInt(10), rand.nextInt(10), rand.nextInt(10));
+		case 4:
+			return new Parallelogram(rand.nextInt(10), rand.nextInt(10), rand.nextInt(10));
 		default:
 			return new Circle(rand.nextInt(100));
 		}
-
+		
 	}
 
-	/**
-	 * adds up the area of all the shapes in the array
-	 * 
+	/*
+	 * adds up the area of all the shapes in the array 
 	 * @param shapes
 	 * @return double
 	 */
+
 	public static double sumArea(Shape[] shapes) 
 	{		
 		// To be written by student
 		double totalArea=0;
-		for(int i=0;i<shapes.length;i++)
+		for(int i = 0 ; i < shapes.length ; i++)
 		{
 			totalArea += shapes[i].calculateArea();
 		}
 		return totalArea;
+		
 	}
 
-	/**
+	/*
 	 * adds up the perimeter of all the shapes in the array
-	 * 
 	 * @param shapes
 	 * @return double
 	 */
+	
 	public static double sumPerimeter(Shape[] shapes) 
 	{
 		// To be written by student
-		double totalPerimeter=0;
-		for(int i=0;i<shapes.length;i++)
+		double totalPerimeter = 0;
+		for(int i = 0 ; i < shapes.length ; i++)
 		{
 			totalPerimeter += shapes[i].calculatePerimeter();
 		}
 		return totalPerimeter;
+		
 	}
 
 }
