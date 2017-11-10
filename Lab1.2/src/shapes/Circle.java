@@ -2,6 +2,7 @@ package shapes;
 
 /*
  * @author Mr Levin Created 10/16/2017 Lab 2.1 shapes
+ * @edits by Saurav Hossain, Dustin Sun, Daniel Li
  */
 
 public class Circle implements Shape 

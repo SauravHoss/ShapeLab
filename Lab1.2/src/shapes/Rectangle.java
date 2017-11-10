@@ -2,7 +2,7 @@ package shapes;
 
 /*
  * @author Mr Levin Created 10/16/2017 Lab 2.1 shapes
- * @edits by Dustin and Saurav
+ * @edits by Saurav Hossain, Dustin Sun, Daniel Li
  */
 
 public class Rectangle implements Shape 
