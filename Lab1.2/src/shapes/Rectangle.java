@@ -5,13 +5,14 @@ package shapes;
  * @edits by Saurav Hossain, Dustin Sun, Daniel Li
  */
 
-public class Rectangle implements Shape 
+public class Rectangle extends Parallelogram 
 {
 	private int length;
 	private int width;
 
 	public Rectangle(int length, int width) 
 	{
+		super(width,length,width);
 		this.length = length;
 		this.width = width;
 	}

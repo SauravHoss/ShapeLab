@@ -5,7 +5,7 @@ package shapes;
  * @edits by Saurav Hossain, Dustin Sun, Daniel Li
  */
 
-public class Square extends Rectangle 
+public class Square extends Rectangle
 {
 	private int side;
 
