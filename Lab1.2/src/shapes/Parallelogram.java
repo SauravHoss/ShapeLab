@@ -1,5 +1,5 @@
 package shapes;
-
+// also broken, need seperate constructor
 public class Parallelogram implements Shape
 {
 	private int base;

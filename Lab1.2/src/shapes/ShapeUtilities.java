@@ -16,7 +16,7 @@ public class ShapeUtilities
 	public static Shape randomShape() 
 	{	
 		Random rand = new Random();
-		int x = rand.nextInt(6);
+		int x = rand.nextInt(9);
 
 		switch (x)
 		{
@@ -32,6 +32,8 @@ public class ShapeUtilities
 			return new Parallelogram(rand.nextInt(10), rand.nextInt(10), rand.nextInt(10));
 		case 5:
 			return new Pentagon(rand.nextInt(10));
+		case 6:
+			return new Rhombus(rand.nextInt(10),rand.nextInt(10), rand.nextInt(10));
 		default:
 			return new Circle(rand.nextInt(100));
 		}
