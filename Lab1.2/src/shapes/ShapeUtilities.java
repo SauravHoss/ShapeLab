@@ -33,7 +33,7 @@ public class ShapeUtilities
 		case 5:
 			return new Pentagon(rand.nextInt(10));
 		case 6:
-			return new Rhombus(rand.nextInt(10),rand.nextInt(10), rand.nextInt(10));
+			return new Rhombus(rand.nextInt(10),rand.nextInt(10));
 		default:
 			return new Circle(rand.nextInt(100));
 		}
