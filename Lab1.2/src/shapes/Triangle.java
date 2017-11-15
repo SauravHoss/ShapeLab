@@ -41,8 +41,10 @@ public class Triangle implements Shape
 
 	public String toString() 
 	{
-		return "Triangle- \n" + "   Height: " + height + "   Base: " + base + "   Area(base and height): " + this.calculateArea() + 
-		"   Area(Heron's Forumala Given All Sides): " + calculateheronarea() + " Perimeter: " + this.calculatePerimeter();
+		return "Triangle- \n" + "   Height: " + height + "   Base: " + base + "   Area(base and height): " + this.calculateArea() +
+		"\nUnique Triangle-\n" + "   Side 1: " + side1 + "   Side 2: " + side2 + "   Side 3: " + side3 + "   Area(Heron's Forumala Given All Sides): " 
+		+ calculateheronarea() + " Perimeter: " + this.calculatePerimeter();
+
 	}
 
 }

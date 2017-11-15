@@ -20,12 +20,12 @@ public class Rhombus implements Shape
 	public double calculatePerimeter() 
 	{
 		// To be written by student
-		return   (2*(Math.pow((Math.pow(Diagonal1,0.5)+ (4*(Math.pow((calculateArea()/Diagonal1),0.5)))), 0.5)));
+		return   (2*(Math.pow(((Math.pow(Diagonal1, 2)) + (Math.pow(Diagonal2, 2))), 0.5)));
 	}
 
 	public String toString() 
 	{
-		return "Rhombus- \n"  + "   Diagonal 1: " + Diagonal1 + "   Diagonal2: " + Diagonal2 
+		return "Rhombus- \n"  + "   Diagonal 1: " + Diagonal1 + "   Diagonal 2: " + Diagonal2 
 		+ "   Area: " + this.calculateArea() + "   Perimeter: " + this.calculatePerimeter();
 	}
 		

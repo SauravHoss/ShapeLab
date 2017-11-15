@@ -29,7 +29,7 @@ public class ShapeUtilities
 		case 3:
 			return new Triangle(rand.nextInt(10), rand.nextInt(10), rand.nextInt(10), rand.nextInt(10), rand.nextInt(10));
 		case 4:
-			return new Parallelogram(rand.nextInt(10), rand.nextInt(10), rand.nextInt(10));
+			return new Parallelogram(rand.nextInt(10), rand.nextInt(10));
 		case 5:
 			return new Pentagon(rand.nextInt(10));
 		case 6:

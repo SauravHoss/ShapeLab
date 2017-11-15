@@ -1,16 +1,15 @@
 package shapes;
-// also broken, need seperate constructor// CURRENTLY WORKS ON REGULAR PARALLELOGRAMS ONLY// PERIMETER IS FUKT
+// also broken, need seperate constructor//  PERIMETER IS FUKT
 public class Parallelogram implements Shape
 {
 	private int base;
 	private int height;
-	private double pyg;
+	
 
-	public Parallelogram(int base, int height, int side) 
+	public Parallelogram(int base, int height) 
 	{
 		this.base = base;
 		this.height = height;
-		this.pyg = height * Math.pow(2, 0.5);
 	}
 	
 	public double calculateArea() 
@@ -22,13 +21,13 @@ public class Parallelogram implements Shape
 	public double calculatePerimeter() 
 	{
 		// To be written by student
-		return (2 * (base + pyg));
+		return (2 * (base + height * Math.pow(2, 0.5)));
 	}
 
 	public String toString() 
 	{
-		return "Parallelogram- \n"  + "   Height: " + height + "   Base: " + base + "   Side: " + pyg 
-				+ "   Area: " + this.calculateArea() + "   Perimeter: " + this.calculatePerimeter();
+		return "Parallelogram- \n"  + "   Height: " + height + "   Base: " + base + "   Side: " + 
+				 "   Area: " + this.calculateArea() + "   Perimeter: " + this.calculatePerimeter();
 	}
 	
 }
