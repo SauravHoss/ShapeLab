@@ -12,7 +12,7 @@ public class Rectangle extends Parallelogram
 
 	public Rectangle(int length, int width) 
 	{
-		super(width,length);
+		super(width,length,width);
 		this.length = length;
 		this.width = width;
 	}

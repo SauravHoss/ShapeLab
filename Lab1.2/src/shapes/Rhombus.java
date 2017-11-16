@@ -1,5 +1,8 @@
 package shapes;
-// might be broken, peri method fixy
+/*
+ * @Created by Saurav Hossain, Dustin Sun, Daniel Li
+ */
+
 public class Rhombus implements Shape
 {
 	private int Diagonal1;

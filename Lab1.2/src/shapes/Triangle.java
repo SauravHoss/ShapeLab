@@ -1,4 +1,7 @@
 package shapes;
+/*
+ * @Created by Saurav Hossain, Dustin Sun, Daniel Li
+ */
 
 public class Triangle implements Shape
 

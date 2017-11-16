@@ -1,32 +1,37 @@
 package shapes;
-// also broken, need seperate constructor//  PERIMETER IS FUKT
+/*
+ * @Created by Saurav Hossain, Dustin Sun, Daniel Li
+ */
+//why does theta always come out 0 #broken
+
 public class Parallelogram implements Shape
 {
-	private int base;
-	private int height;
-	
+	private int sidea;
+	private int sideb;
+	private int angle;
 
-	public Parallelogram(int base, int height) 
+	public Parallelogram(int sidea, int sideb, int angle) 
 	{
-		this.base = base;
-		this.height = height;
+		this.sidea = sidea;
+		this.sideb = sideb;
+		this.angle = angle;
 	}
 	
 	public double calculateArea() 
 	{
 		// To be written by student
-		return (base * height);
+		return (sidea * sideb * (Math.sin(angle)));
 	}
 
 	public double calculatePerimeter() 
 	{
 		// To be written by student
-		return (2 * (base + height * Math.pow(2, 0.5)));
+		return (2 * (sidea + sideb));
 	}
 
 	public String toString() 
 	{
-		return "Parallelogram- \n"  + "   Height: " + height + "   Base: " + base + "   Side: " + 
+		return "Parallelogram- \n"  + "   Side A: " + sidea + "   Side B: " + sideb + "   Angle: " + angle + 
 				 "   Area: " + this.calculateArea() + "   Perimeter: " + this.calculatePerimeter();
 	}
 	
